@@ -29,6 +29,13 @@ class TodoController extends Controller
      */
     public function update(Request $request, Todo $todo)
     {
-        //
+        $request->validate([
+            'completed' => 'required|boolean',
+            'description' => 'nullable|string'
+        ]);
+
+        $todo->update($request->all());
+
+        return response()->json($todo);
     }
 }

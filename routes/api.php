@@ -21,5 +21,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(TodoController::class)->group(function () {
     Route::get('/todos', 'index');
-    Route::put('/todos/{todo}', 'update');
+    Route::match(['put', 'patch'], '/todos/{todo}', 'update');
 });
