@@ -26,7 +26,7 @@ class GetTodosTest extends TestCase
                     'id',
                     'description',
                     'completed',
-                    'inserted_at',
+                    'created_at',
                     'updated_at'
                 ]
             ], 
