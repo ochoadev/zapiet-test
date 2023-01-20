@@ -26,7 +26,7 @@ class GetTodosTest extends TestCase
                 '*' => [
                     'id',
                     'description',
-                    'status',
+                    'completed',
                     'inserted_at',
                     'updated_at'
                 ]
