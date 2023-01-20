@@ -13,7 +13,7 @@ class GetTodosTest extends TestCase
      *
      * @return void
      */
-    public function get_todos_paginated_list()
+    public function test_get_todos_paginated_list()
     {
         $response = $this->withHeader('Content-Type', 'application/json')->get('/api/todos');
 
